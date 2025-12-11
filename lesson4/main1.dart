@@ -14,11 +14,11 @@ void main() {
 
   print('Введите число a: ');
   str = stdin.readLineSync() ?? '0';
-  double a = double.tryParse(str) ?? 0;
+  final double a = double.tryParse(str) ?? 0;
 
   print('Введите число b: ');
   str = stdin.readLineSync() ?? '0';
-  double b = double.tryParse(str) ?? 0;
+  final double b = double.tryParse(str) ?? 0;
 
   print('a+b=${a+b}');
   print('a-b=${a-b}');

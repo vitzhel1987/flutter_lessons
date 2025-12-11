@@ -11,7 +11,7 @@ void main() {
   String str = '';
   print('Введите число a: ');
   str = stdin.readLineSync() ?? '';
-  double? a = double.tryParse(str);
+  final double? a = double.tryParse(str);
   if (a != null) {
     if (a > 0)
       print('Число a=$a - положительное');
@@ -28,7 +28,7 @@ void main() {
 
   print('Введите номер дня недели [1:7]: ');
   str = stdin.readLineSync() ?? '';
-  int? day = int.tryParse(str);
+  final int? day = int.tryParse(str);
 
   if (day == null) {
     print('Введено не целое число');

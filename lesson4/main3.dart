@@ -19,7 +19,7 @@ void main() {
 
   final List<int?> list2 = [];
   print('Введите размер списка list2 [по умолчанию=5]: ');
-  int len2 = int.tryParse(stdin.readLineSync() ?? '') ?? 5;
+  final int len2 = int.tryParse(stdin.readLineSync() ?? '') ?? 5;
   for(var i=0; i < len2; i++){
     print('Введите элемент $i: ');
     list2.add(int.tryParse(stdin.readLineSync() ?? ''));
