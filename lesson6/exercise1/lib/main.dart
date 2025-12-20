@@ -49,7 +49,7 @@ class _MyHomePageState extends State<MyHomePage> {
           // Фоновое изображение
           Positioned.fill(
             child: Image.asset(
-              'assets/images/1129.jpg',
+              'images/1129.jpg',
               fit: BoxFit.cover,
             ),
           ),
