@@ -11,6 +11,7 @@ Stream<int> generateNumbersAsync(int max) async* {
     yield await Future.delayed(Duration(seconds: 1), () => i);
   }
 }
+
 void main() async{
   final numbers = generateNumbersAsync(10);
   final streamController = StreamController<int>();

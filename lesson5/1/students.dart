@@ -3,15 +3,15 @@
 // список студентов и сортирует его по среднему баллу в порядке убывания.
 
 class Student{
-  String name;
-  int age;
-  double averageScore;
+  final String name;
+  final int age;
+  final double averageScore;
 
-  Student(this.name, this.age, this.averageScore);
+  const Student(this.name, this.age, this.averageScore);
 
   @override
   String toString() {
-    return "($name, $age, $averageScore)";
+    return "(Студент: $name, возраст: $age, средний балл: $averageScore)";
   }
 }
 

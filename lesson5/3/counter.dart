@@ -16,6 +16,8 @@ class Counter{
   int _count;
   final StreamController<int> _streamController = StreamController<int>();
 
+  StreamController<int> get streamController => _streamController;
+
   Counter(this._count);
 
   Stream stream() => _streamController.stream;
@@ -54,5 +56,7 @@ void main(){
   counter.decrement();
   counter.decrement();
   counter.decrement();
+
+  counter.streamController.close();
 
 }
