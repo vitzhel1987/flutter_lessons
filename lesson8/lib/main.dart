@@ -53,6 +53,7 @@ class MyApp extends StatelessWidget {
                         spacing: 5,
                         children: [
                           Flexible(
+                            fit: FlexFit.tight,
                             child: Container(
                                 //color: Colors.cyan, //конфликт с decoration.color
                                 width: double.infinity,
@@ -62,6 +63,7 @@ class MyApp extends StatelessWidget {
                                   borderRadius: BorderRadius.only(topLeft: Radius.circular(16), topRight: Radius.circular(16)), // Радиус скругления
                                 ),
                                 child: Image.network(
+                                  fit: BoxFit.contain,
                                   'https://loremflickr.com/200/300',
                                   errorBuilder: (context, error, stackTrace) {
                                     return Container(
