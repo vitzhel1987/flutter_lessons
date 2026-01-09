@@ -22,24 +22,19 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       title: 'lesson8',
-      theme: ThemeData(
-        colorScheme: .fromSeed(seedColor: Colors.deepPurple),
-      ),
+      theme: ThemeData(colorScheme: .fromSeed(seedColor: Colors.deepPurple)),
       home: Scaffold(
         appBar: AppBar(
           centerTitle: true,
-          title: SafeArea(
-            top: false,
-            child: Text('Лента новостей')
-          ),
+          title: SafeArea(top: false, child: Text('Лента новостей')),
         ),
-        //appBar: AppBar(centerTitle: true, title: Text('Пример контекста', textAlign: TextAlign.center)),
 
+        //appBar: AppBar(centerTitle: true, title: Text('Пример контекста', textAlign: TextAlign.center)),
         body: Stack(
           children: [
             LayoutBuilder(
               builder: (context, constraints) {
-                int crossAxisCount = constraints.maxWidth > 600 ? 3 : 2;
+                final int crossAxisCount = constraints.maxWidth > 600 ? 3 : 2;
                 return GridView.builder(
                   gridDelegate: SliverGridDelegateWithFixedCrossAxisCount(
                     crossAxisCount: crossAxisCount,
@@ -55,61 +50,79 @@ class MyApp extends StatelessWidget {
                           Flexible(
                             fit: FlexFit.tight,
                             child: Container(
-                                //color: Colors.cyan, //конфликт с decoration.color
-                                width: double.infinity,
-                                height: double.infinity,
-                                decoration: BoxDecoration(
-                                  color: Colors.blue[100],
-                                  borderRadius: BorderRadius.only(topLeft: Radius.circular(16), topRight: Radius.circular(16)), // Радиус скругления
-                                ),
-                                child: Image.network(
-                                  fit: BoxFit.contain,
-                                  'https://loremflickr.com/200/300',
-                                  errorBuilder: (context, error, stackTrace) {
-                                    return Container(
-                                      color: Colors.grey[300],
-                                      child: Icon(Icons.broken_image, size: 70, color: Colors.grey[500]),
-                                    );
-                                  },
-                                )
-                                //child: Center(child: Text('Изобрадение $index',)),
+                              //color: Colors.cyan, //конфликт с decoration.color
+                              width: double.infinity,
+                              height: double.infinity,
+                              decoration: BoxDecoration(
+                                color: Colors.blue[100],
+                                borderRadius: BorderRadius.only(
+                                  topLeft: Radius.circular(16),
+                                  topRight: Radius.circular(16),
+                                ), // Радиус скругления
+                              ),
+                              child: Image.network(
+                                fit: BoxFit.contain,
+                                'https://loremflickr.com/200/300',
+                                errorBuilder: (context, error, stackTrace) {
+                                  return Container(
+                                    color: Colors.grey[300],
+                                    child: Icon(
+                                      Icons.broken_image,
+                                      size: 70,
+                                      color: Colors.grey[500],
+                                    ),
+                                  );
+                                },
+                              ),
+                              //child: Center(child: Text('Изобрадение $index',)),
                             ),
                           ),
-                          Padding(padding: EdgeInsets.only(left: 5,), child: Text('Заголовок новости $index', style: TextStyle(fontWeight: FontWeight.bold),)),
                           Padding(
-                              padding: EdgeInsets.only(left: 5, bottom: 5),
-                              child: Text(
-                                'Сегодня ${formatDateTime(DateTime.now(), format: 'yyyy.MM.dd HH:mm')}',
-                                style: TextStyle(fontSize: 10, color: Colors.grey,),
-                              )
+                            padding: EdgeInsets.only(left: 5),
+                            child: Text(
+                              'Заголовок новости $index',
+                              style: TextStyle(fontWeight: FontWeight.bold),
+                            ),
+                          ),
+                          Padding(
+                            padding: EdgeInsets.only(left: 5, bottom: 5),
+                            child: Text(
+                              'Сегодня ${formatDateTime(DateTime.now(), format: 'yyyy.MM.dd HH:mm')}',
+                              style: TextStyle(
+                                fontSize: 10,
+                                color: Colors.grey,
+                              ),
+                            ),
                           ),
                         ],
                       ),
                     );
                   },
                 );
-              }
+              },
             ),
             Positioned(
               right: 20,
               bottom: 20,
-              child: Container(
+              child: SizedBox(
                 height: 50,
                 child: ElevatedButton(
-                  onPressed: (){},
+                  onPressed: () {},
                   child: Text('+'),
                   style: ElevatedButton.styleFrom(
                     backgroundColor: Colors.grey[300],
                     shape: RoundedRectangleBorder(
-                      borderRadius: BorderRadius.circular(12.0), // Радиус скругления
+                      borderRadius: BorderRadius.circular(
+                        12.0,
+                      ), // Радиус скругления
                     ),
                   ),
                 ),
               ),
             ),
-          ]
-        )
-      )
+          ],
+        ),
+      ),
     );
   }
 }

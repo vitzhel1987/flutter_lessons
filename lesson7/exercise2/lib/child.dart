@@ -3,6 +3,8 @@ import 'inherited_counter.dart';
 
 
 class Child1 extends StatelessWidget{
+  const Child1({super.key});
+
   @override
   Widget build(BuildContext context) {
     return Text(
@@ -13,6 +15,8 @@ class Child1 extends StatelessWidget{
 
 //Попытка 3
 class Child2 extends StatelessWidget{
+  const Child2({super.key});
+
   @override
   Widget build(BuildContext context) {
     return ElevatedButton(

@@ -52,7 +52,7 @@ class _MyHomePageState extends State<MyHomePage> {
               crossAxisAlignment: CrossAxisAlignment.center,
               mainAxisSize: MainAxisSize.min,
               children: [
-                Text('_MyHomePage: _counter: ${_counter}'),
+                Text('_MyHomePage: _counter: $_counter'),
                 Child1(),
                 Child2(),
               ],
