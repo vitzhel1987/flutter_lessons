@@ -12,6 +12,7 @@ class _MyFormState extends State<MyForm> {
   final _formKey = GlobalKey<FormState>();
 
   bool _isSecuringPassword = true;
+  bool _isLoading = false;
 
   // Контроллеры для полей ввода
   final _emailController = TextEditingController();
@@ -44,9 +45,15 @@ class _MyFormState extends State<MyForm> {
     );
   }
 
-  void _submitForm() {
+  void _submitForm() async {
+    setState(() {
+      _isLoading = true;
+    });
+
     // Проверяем валидность формы
     final isValid = _formKey.currentState!.validate();
+
+    await Future.delayed(Duration(seconds: 2));
 
     if (isValid) {
       // Если форма валидна, обрабатываем данные
@@ -58,6 +65,10 @@ class _MyFormState extends State<MyForm> {
         ),
       );
     }
+
+    setState(() {
+      _isLoading = false;
+    });
   }
 
   void _createNewAccount() {
@@ -181,7 +192,9 @@ class _MyFormState extends State<MyForm> {
                     borderRadius: BorderRadius.circular(10),
                   ),
                 ),
-                child: const Text('Войти'),
+                child: _isLoading
+                    ? CircularProgressIndicator(color: Colors.white)
+                    : const Text('Войти'),
               ),
               const SizedBox(height: 15),
               Row(
