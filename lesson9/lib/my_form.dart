@@ -93,7 +93,7 @@ class _MyFormState extends State<MyForm> {
               children: [
                 GestureDetector(
                   onTap: () {
-                    print('Логотип нажат!');
+                    debugPrint('Логотип нажат!');
                   },
                   child: Container(
                     margin: EdgeInsets.all(20),
