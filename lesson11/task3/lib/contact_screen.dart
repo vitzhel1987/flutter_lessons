@@ -26,7 +26,7 @@ class ContactScreen extends StatelessWidget {
                       Text('Возраст: ${contact!.age.toString()}'),
                     ],
                   )
-                : Text('Ошибка'),
+                : const Text('Ошибка'),
             const SizedBox(height: 20),
             ElevatedButton(
               onPressed: () {

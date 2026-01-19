@@ -4,5 +4,5 @@ class Contact {
   final bool gender;
   final String phoneNumber;
 
-  Contact(this.fio, this.age, this.gender, this.phoneNumber);
+  const Contact(this.fio, this.age, this.gender, this.phoneNumber);
 }
