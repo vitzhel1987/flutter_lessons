@@ -1,8 +1,8 @@
 class Contact {
-  String fio;
-  int age;
-  bool gender;
-  String phoneNumber;
+  final String fio;
+  final int age;
+  final bool gender;
+  final String phoneNumber;
 
   Contact(this.fio, this.age, this.gender, this.phoneNumber);
 }

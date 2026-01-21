@@ -6,7 +6,7 @@ import 'contact.dart';
 
 
 /// The route configuration.
-final GoRouter app_router = GoRouter(
+final GoRouter appRouter = GoRouter(
   routes: <RouteBase>[
     GoRoute(
       path: '/',

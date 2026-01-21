@@ -9,6 +9,7 @@ class ContactScreen extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+    final contact = this.contact;
     return Scaffold(
       appBar: AppBar(title: const Text('Информация о контакте')),
       body: Center(
@@ -20,10 +21,10 @@ class ContactScreen extends StatelessWidget {
                 ? Column(
                     mainAxisAlignment: MainAxisAlignment.spaceAround,
                     children: [
-                      Text('ФИО: ${contact!.fio}'),
-                      Text('Номер: ${contact!.phoneNumber}'),
-                      Text('Пол: ${contact!.gender ? 'муж' : 'жен'}'),
-                      Text('Возраст: ${contact!.age.toString()}'),
+                      Text('ФИО: ${contact.fio}'),
+                      Text('Номер: ${contact.phoneNumber}'),
+                      Text('Пол: ${contact.gender ? 'муж' : 'жен'}'),
+                      Text('Возраст: ${contact.age.toString()}'),
                     ],
                   )
                 : const Text('Ошибка'),

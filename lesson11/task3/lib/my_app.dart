@@ -9,7 +9,7 @@ class MyApp extends StatelessWidget {
     return MaterialApp.router(
       title: 'Flutter Navigation go_router',
       theme: ThemeData(primarySwatch: Colors.blue),
-      routerConfig: app_router,
+      routerConfig: appRouter,
     );
   }
 }
