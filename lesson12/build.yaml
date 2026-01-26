@@ -1,0 +1,9 @@
+targets:
+  $default:
+    builders:
+      retrofit_generator|retrofit:
+        options:
+          # Включить генерацию для Dio 5.x
+          generate_adapter: true
+          dio_type: dio
+          auto_cast_response: true
