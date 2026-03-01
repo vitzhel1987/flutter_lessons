@@ -1,0 +1,114 @@
+{
+    "signIn": "Авторизоваться",
+    "welcomeBack": "С возвращением!",
+    "email": "Электронная почта",
+    "password": "Пароль",
+    "signInToContinue": "Войдите, чтобы продолжить",
+    "noAccount": "Нет аккаунта?",
+    "signUp": "Зарегистрироваться",
+    "forgotPassword": "Забыли пароль?",
+    "dontHaveAccount": "Нет аккаунта? Зарегистрироваться",
+    "emailCannotBeEmpty": "Электронная почта не может быть пустой",
+    "invalidEmail": "Неверный формат электронной почты",
+    "passwordCannotBeEmpty": "Пароль не может быть пустым",
+    "passwordTooShort": "Пароль должен быть не менее 6 символов",
+    "passwordTooLong": "Пароль не может быть длиннее 50 символов",
+    "passwordMustContainUppercase": "Пароль должен содержать хотя бы одну заглавную букву",
+    "passwordMustContainLowercase": "Пароль должен содержать хотя бы одну строчную букву",
+    "passwordMustContainDigit": "Пароль должен содержать хотя бы одну цифру",
+    "emailTooLong": "Электронная почта не может быть длиннее 255 символов",
+    "registerPageTitle": "Регистрация",
+    "register": "Зарегистрироваться",
+    "alreadyHaveAccount": "Уже есть аккаунт? Войти",
+    "createAccount": "Создайте аккаунт",
+    "registrationSuccess": "Регистрация прошла успешно!",
+    "signUpToGetStarted": "Зарегистрируйтесь, чтобы начать работу",
+    "signOut": "Выйти",
+    "my_todos": "Мои дела",
+    "something_went_wrong": "Что-то пошло не так...",
+    "try_again": "Попробовать снова",
+    "add": "Добавить",
+    "not_todos_yet": "Пока дел нет",
+    "add_your_first_todo": "Добавьте первую задачу!",
+    "whatToDo": "Что нужно сделать?",
+    "@whatToDo": {
+        "description": "Подсказка / лейбл для поля заголовка задачи"
+    },
+    "whatToDoHint": "Купить молоко, позвонить маме...",
+    "@whatToDoHint": {},
+    "notes": "Заметки / детали",
+    "@notes": {
+        "description": "Лейбл для поля заметок"
+    },
+    "notesHint": "Например: обезжиренное, 2 пакета",
+    "@notesHint": {},
+    "emptyListTitle": "Список пуст",
+    "@emptyListTitle": {},
+    "emptyListSubtitle": "Добавьте свою первую задачу",
+    "@emptyListSubtitle": {},
+    "errorOccurred": "Произошла ошибка",
+    "@errorOccurred": {},
+    "tryAgain": "Повторить",
+    "@tryAgain": {},
+    "taskRequired": "Введите название задачи",
+    "@taskRequired": {
+        "description": "Ошибка валидации: поле пустое"
+    },
+    "taskTooShort": "Минимум 2 символа",
+    "@taskTooShort": {
+        "description": "Ошибка валидации: слишком короткое название"
+    },
+    "taskTooLong": "Максимум 100 символов",
+    "@taskTooLong": {
+        "description": "Ошибка валидации: слишком длинное название"
+    },
+    "addTaskButton": "Добавить задачу",
+    "@addTaskButton": {
+        "description": "Текст на кнопке в bottom sheet"
+    },
+    "save": "Сохранить",
+    "taskCreationHint": "Укажите чётко, что нужно сделать.\nЗаметки помогут не забыть важные детали.",
+    "@taskCreationHint": {
+    "description": "Подсказка под полями ввода на экране создания задачи: объясняет, как лучше заполнять поля"
+    },
+    "editTask": "Редактировать задачу",
+    "@editTask": {
+        "description": "Заголовок страницы редактирования задачи"
+    },
+    "taskUpdateHint": "Вы можете изменить название и заметки задачи.\nНе забудьте сохранить изменения!",
+    "@taskUpdateHint": {
+        "description": "Подсказка под полями ввода на экране редактирования задачи: объясняет, что можно изменить и напоминает сохранить изменения"
+    },
+    "taskUpdated": "Задача обновлена",
+    "@taskUpdated": {
+        "description": "Текст в SnackBar после успешного обновления задачи"
+    },
+    "error": "Ошибка {error}",
+    "@error": {
+        "description": "Текст ошибки с параметром error, который содержит описание ошибки"
+    },
+    "failedToLoadTask": "Не удалось загрузить задачу {error}",
+    "@failedToLoadTask": {
+        "description": "Текст ошибки с параметром error, который содержит описание ошибки при загрузке задачи для редактирования"
+    },
+    "taskCompleted": "Задача выполнена",
+    "@taskCompleted": {
+        "description": "Текст, отображаемый рядом с иконкой галочки для выполненных задач"
+    },
+    "saving": "Сохранение...",
+    "@saving": {
+        "description": "Текст на кнопке сохранения во время выполнения операции сохранения"
+    },
+    "taskTitle": "Название задачи",
+    "@taskTitle": {
+        "description": "Лейбл для поля ввода названия задачи"
+    },
+    "notesLabel": "Заметка / описание",
+    "@notesLabel": {
+        "description": "Лейбл для поля ввода заметки/описания задачи"
+    },
+    "taskRemoved": "Задача удалена",
+    "@taskRemoved": {
+        "description": "Текст в SnackBar после успешного удаления задачи"
+    }
+}
